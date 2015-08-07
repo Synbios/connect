@@ -1,5 +1,5 @@
 class StaticController < ApplicationController
   def home
-    render layout: false
+    render layout: "home"
   end
 end

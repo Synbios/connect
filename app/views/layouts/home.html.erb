@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+  <title>The title of home page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Responsive Multipurpose Bootstrap Theme">
+  <meta name="author" content="The Develovers">
+
+  <!-- CSS -->
+  <!-- bootstrap & fontawesome & main -->
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <!-- <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css"> 
+  <link href="assets/css/main.css" rel="stylesheet" type="text/css"> -->
+
+  <!-- IE 9 Fallback-->
+  <!--[if IE 9]>
+    <link href="/stylesheets/ie.css" rel="stylesheet">
+  <![endif]-->
+
+  <!-- GOOGLE FONTS -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,400italic,700,400,300' rel='stylesheet' type='text/css'>
+
+  <!-- FAVICONS -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/repute144x144.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/repute114x114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/repute72x72.png">
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/repute57x57.png">
+  <link rel="shortcut icon" href="assets/ico/favicon.png">
+</head>
+
+<body>
+  <!-- WRAPPER -->
+  <div class="wrapper">
+    <!-- MAIN NAVBAR -->
+    <%= render "layouts/main_navbar" %>
+    <!-- END MAIN NAVBAR -->
+
+    <!-- MAIN HERO UNIT SLIDER -->
+    <%= render "layouts/main_slider" %>
+    <!-- END MAIN HERO UNIT SLIDER -->
+
+    <%= yield %>
+
+    <!-- FOOTER -->
+    <%= render "layouts/footer" %>
+    <!-- END FOOTER -->
+  </div>
+  <!-- END WRAPPER -->
+
+  <!-- JAVASCRIPTS -->
+  <script src="/javascripts/jquery-2.1.1.min.js"></script>
+  <script src="/javascripts/bootstrap.min.js"></script>
+  <script src="/javascripts/plugins/slick/slick.min.js"></script>
+  <script src="/javascripts/plugins/stellar/jquery.stellar.min.js"></script>
+  <script src="/javascripts/plugins/jquery-easypiechart/jquery.easypiechart.min.js"></script>
+  <script src="/javascripts/plugins/autohidingnavbar/jquery.bootstrap-autohidingnavbar.min.js"></script>
+  <script src="/javascripts/repute-scripts.js"></script>
+
+</body>
+</html>
