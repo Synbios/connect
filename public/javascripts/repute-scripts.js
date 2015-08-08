@@ -56,8 +56,8 @@ $(document).ready( function() {
 			dots: true,
 			slidesToShow: 3,
 			cssEase: 'ease-in',
-			prevArrow: '<button type="button" data-role="none" class="btn slick-prev">Previous</button>',
-			nextArrow: '<button type="button" data-role="none" class="btn slick-next">Next</button>',
+			prevArrow: '<button type="button" data-role="none" class="btn slick-prev"></button>',
+			nextArrow: '<button type="button" data-role="none" class="btn slick-next"></button>',
 			responsive: [
 				{
 					breakpoint: 993,
@@ -77,8 +77,8 @@ $(document).ready( function() {
 		$('.testimonial').slick({
 			speed: 500,
 			fade: true,
-			prevArrow: '<button type="button" data-role="none" class="btn slick-prev">Previous</button>',
-			nextArrow: '<button type="button" data-role="none" class="btn slick-next">Next</button>',
+			prevArrow: '<button type="button" data-role="none" class="btn slick-prev"></button>',
+			nextArrow: '<button type="button" data-role="none" class="btn slick-next"></button>',
 		});
 
 		$('#carousel-hero .carousel-inner').slick({
@@ -87,8 +87,8 @@ $(document).ready( function() {
 			fade: true,
 			autoplay: true,
 			autoplaySpeed: 2500,
-			prevArrow: '<button type="button" data-role="none" class="carousel-control left slick-prev">Previous</button>',
-			nextArrow: '<button type="button" data-role="none" class="carousel-control right slick-next">Next</button>',
+			prevArrow: '<button type="button" data-role="none" class="carousel-control left slick-prev"></button>',
+			nextArrow: '<button type="button" data-role="none" class="carousel-control right slick-next"></button>',
 		});
 	}
 	

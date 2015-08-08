@@ -1,45 +1,7 @@
 <nav class="navbar navbar-default" role="navigation">
   <div class="container">
     <!-- TOPBAR -->
-    <div class="topbar">
-      <ul class="list-inline top-nav">
-        <li>
-          <div class="btn-group">
-            <button type="button" class="btn btn-link dropdown-toggle btn-xs" data-toggle="dropdown">
-              <img src="assets/img/flags/United-Kingdom.png" alt="United Kingdom"> United Kingdom <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-right country-selector" role="menu">
-              <li>
-                <a href="#"><img src="assets/img/flags/United-Kingdom.png" alt="United Kingdom"> United Kingdom</a>
-              </li>
-              <li>
-                <a href="#"><img src="assets/img/flags/Japan.png" alt="Japan"> Japan</a>
-              </li>
-              <li>
-                <a href="#"><img src="assets/img/flags/China.png" alt="China"> China</a>
-              </li>
-              <li>
-                <a href="#"><img src="assets/img/flags/Germany.png" alt="Germany"> Germany</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <a href="#">Help</a>
-        </li>
-        <li>
-          <a href="#">Support</a>
-        </li>
-      </ul>
-      <div class="searchbox">
-        <div class="input-group input-group-sm">
-          <input type="text" class="form-control" placeholder="search ...">
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
-          </span>
-        </div>
-      </div>
-    </div>
+    <%= render "layouts/topbar" %>
     <!-- END TOPBAR -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
@@ -47,7 +9,7 @@
         <i class="fa fa-bars"></i>
       </button>
       <a href="index.html" class="navbar-brand navbar-logo navbar-logo-bigger">
-        <img src="assets/img/logo/repute-logo-nav.png" alt="Repute - Responsive Multipurpose Bootstrap Theme">
+        <%= image_tag "logo.png", alt: "Company LOGO" %>
       </a>
     </div>
 
@@ -55,164 +17,77 @@
     <div id="main-nav" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown active">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">HOME <i class="fa fa-angle-down"></i></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">SERVICES <i class="fa fa-angle-down"></i></a>
           <ul class="dropdown-menu" role="menu">
             <li class="active">
-              <a href="index.html">Home v1</a>
+              <a href="index.html">Control Systems Integrator</a>
             </li>
             <li>
-              <a href="index-v2.html">Home v2</a>
+              <a href="index-v2.html">PLC / HMI Programming</a>
             </li>
             <li>
-              <a href="index-v3.html">Home v3</a>
+              <a href="index-v3.html">Controls Systems Technical Support</a>
             </li>
             <li>
-              <a href="one-page/index.html">One Page</a>
+              <a href="one-page/index.html">Network Design and Support</a>
+            </li>
+            <li>
+              <a href="one-page/index.html">Control Panel Fabrication</a>
+            </li>
+            <li>
+              <a href="one-page/index.html">Instrumentation and Electrical Services</a>
+            </li>
+            <li>
+              <a href="one-page/index.html">Data Acquisition and Hosting Solutions</a>
+            </li>
+            <li>
+              <a href="one-page/index.html">Control Systems Audits</a>
             </li>
           </ul>
         </li>
         <li class="dropdown ">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">PAGES <i class="fa fa-angle-down"></i></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">RSERVED ITEMS <i class="fa fa-angle-down"></i></a>
           <ul class="dropdown-menu" role="menu">
             <li>
-              <a href="page-services.html">Service Page</a>
-            </li>
-            <li>
-              <a href="page-pricing-tables.html">Pricing Tables</a>
+              <a href="ui-buttons.html">item 1</a>
             </li>
             <li class="dropdown ">
-              <a href="#">Columns <i class="fa fa-angle-right"></i></a>
+              <a href="#">item list <i class="fa fa-angle-right"></i></a>
               <ul class="dropdown-menu" role="menu">
                 <li>
-                  <a href="page-left-sidebar.html">Left Sidebar</a>
+                  <a href="ui-alerts.html">another item 1</a>
                 </li>
                 <li>
-                  <a href="page-right-sidebar.html">Right Sidebar</a>
+                  <a href="ui-breadcrumbs.html">another item 2</a>
                 </li>
                 <li>
-                  <a href="page-double-sidebar.html">Double Sidebar</a>
+                  <a href="ui-pagination.html">another item 3</a>
                 </li>
               </ul>
             </li>
+           
             <li>
-              <a href="page-search-results.html">Search Result</a>
+              <a href="ui-numbers-charts.html">item 2</a>
             </li>
             <li>
-              <a href="page-support.html">Support</a>
-            </li>
-            <li>
-              <a href="page-faq.html">FAQ</a>
-            </li>
-            <li>
-              <a href="page-about-us.html">About Us</a>
-            </li>
-            <li>
-              <a href="page-privacy.html">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="page-terms.html">Terms</a>
-            </li>
-            <li>
-              <a href="page-error.html">Error Page</a>
-            </li>
-            <li class="dropdown ">
-              <a href="#">Sub Menu Lvl 1 <i class="fa fa-angle-right"></i></a>
-              <ul class="dropdown-menu" role="menu">
-                <li class="dropdown ">
-                  <a href="#">Sub Menu Lvl 2 <i class="fa fa-angle-right"></i></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li>
-                      <a href="#sublvl3">Sub Menu Lvl 3</a>
-                    </li>
-                    <li>
-                      <a href="#sublvl3">Sub Menu Lvl 3</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#sublvl2">Sub Menu Lvl 2</a>
-                </li>
-                <li>
-                  <a href="#sublvl2">Sub Menu Lvl 2</a>
-                </li>
-              </ul>
+              <a href="ui-boxed-contents.html">item 3</a>
             </li>
           </ul>
         </li>
         <li class="dropdown ">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">UI ELEMENTS <i class="fa fa-angle-down"></i></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">CAREERS <i class="fa fa-angle-down"></i></a>
           <ul class="dropdown-menu" role="menu">
             <li>
-              <a href="ui-buttons.html">Buttons</a>
+              <a href="portfolio-4-columns.html">item 1</a>
             </li>
             <li>
-              <a href="ui-tabs-accordion.html">Tabs &amp; Accordion</a>
-            </li>
-            <li class="dropdown ">
-              <a href="#">Components <i class="fa fa-angle-right"></i></a>
-              <ul class="dropdown-menu" role="menu">
-                <li>
-                  <a href="ui-alerts.html">Alerts</a>
-                </li>
-                <li>
-                  <a href="ui-breadcrumbs.html">Breadcrumbs</a>
-                </li>
-                <li>
-                  <a href="ui-pagination.html">Pagination</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown ">
-              <a href="#">Forms <i class="fa fa-angle-right"></i></a>
-              <ul class="dropdown-menu" role="menu">
-                <li>
-                  <a href="ui-form-elements-basic.html">Basic Form Elements</a>
-                </li>
-                <li>
-                  <a href="ui-form-elements-advanced.html">Advanced Form Elements</a>
-                </li>
-                <li>
-                  <a href="ui-form-layouts.html">Form Layouts</a>
-                </li>
-                <li>
-                  <a href="ui-form-validation.html">Validation</a>
-                </li>
-              </ul>
+              <a href="portfolio-3-columns.html">item 2</a>
             </li>
             <li>
-              <a href="ui-numbers-charts.html">Numbers &amp; Charts</a>
+              <a href="portfolio-2-columns.html">item 3</a>
             </li>
             <li>
-              <a href="ui-boxed-contents.html">Boxed Contents</a>
-            </li>
-            <li>
-              <a href="ui-testimonials.html">Testimonials</a>
-            </li>
-            <li>
-              <a href="ui-maps.html">Maps</a>
-            </li>
-            <li>
-              <a href="ui-typography.html">Typography</a>
-            </li>
-            <li>
-              <a href="ui-icons.html">Icons</a>
-            </li>
-          </ul>
-        </li>
-        <li class="dropdown ">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">PORTFOLIO <i class="fa fa-angle-down"></i></a>
-          <ul class="dropdown-menu" role="menu">
-            <li>
-              <a href="portfolio-4-columns.html">Portfolio 4 Columns</a>
-            </li>
-            <li>
-              <a href="portfolio-3-columns.html">Portfolio 3 Columns</a>
-            </li>
-            <li>
-              <a href="portfolio-2-columns.html">Portfolio 2 Columns</a>
-            </li>
-            <li>
-              <a href="portfolio-single.html">Portfolio Item</a>
+              <a href="portfolio-single.html">item 4</a>
             </li>
           </ul>
         </li>

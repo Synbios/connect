@@ -18,7 +18,7 @@ body {
   line-height: 1.6;
 }
 body.layout-boxed {
-  background-image: url('../img/gray_jean.png?1353438653');
+  background-image: url(image-path('gray_jean.png'));
   background-repeat: repeat;
   background-color: #ccc;
 }
@@ -303,7 +303,7 @@ hr {
 }
 
 .slick-loading .slick-list {
-  background: #fff url("../img/bx_loader.gif") center center no-repeat;
+  background: #fff url(image-path('bx_loader.gif')) center center no-repeat;
 }
 
 .slick-list.dragging {
@@ -522,7 +522,7 @@ hr {
   opacity: 0.75;
 }
 
-/*# sourceMappingURL=slick.css.map */
+
 /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license
@@ -3742,7 +3742,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .hero-unit-animated {
   padding: 100px 0;
   color: #fff;
-  background-image: url('../img/hero-unit-bg.png?1420789489');
+  background-image: url(image-path('hero-unit-bg.png'));
   background-repeat: no-repeat;
   background-position: center -75px;
 }
@@ -4447,7 +4447,7 @@ div[class*="col-"] > .form-group {
 
 .testimonial-with-bg {
   padding: 120px 0;
-  background-image: url('../img/testimonial-bg.png?1424866387');
+  background-image: url(image-path('testimonial-bg.png'));
   background-attachment: fixed;
   background-position: center center;
   color: #fff;
@@ -5979,7 +5979,7 @@ ul.sidebar-nav ul.submenu li:first-child a {
   font-size: 28px;
 }
 .multiple-pricing-table .pricing-badge {
-  background-image: url('../img/badge.png?1411987447');
+  background-image: url(image-path('badge.png'));
   background-repeat: no-repeat;
   width: 100px;
   height: 100px;
