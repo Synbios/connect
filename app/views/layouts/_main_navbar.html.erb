@@ -9,44 +9,50 @@
         <i class="fa fa-bars"></i>
       </button>
       <a href="index.html" class="navbar-brand navbar-logo navbar-logo-bigger">
-        <%= image_tag "logo.png", alt: "Company LOGO" %>
+        <%= image_tag "logo_rectanglar.jpg", alt: "Company LOGO" %>
       </a>
     </div>
 
     <!-- MAIN NAVIGATION -->
     <div id="main-nav" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
+        <li>
+          <%= link_to "HOME", root_path %>
+        </li>
+        <li>
+          <%= link_to "ABOUT US", about_path %>
+        </li>
         <li class="dropdown active">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">SERVICES <i class="fa fa-angle-down"></i></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">OUR SERVICES <i class="fa fa-angle-down"></i></a>
           <ul class="dropdown-menu" role="menu">
-            <li class="active">
-              <a href="index.html">Control Systems Integrator</a>
+            <li>
+              <%= link_to "Control Systems Integrator", services_path %>
             </li>
             <li>
-              <a href="index-v2.html">PLC / HMI Programming</a>
+              <%= link_to "PLC / HMI Programming", services_path %>
             </li>
             <li>
-              <a href="index-v3.html">Controls Systems Technical Support</a>
+              <%= link_to "Controls Systems Technical Support", services_path %>
             </li>
             <li>
-              <a href="one-page/index.html">Network Design and Support</a>
+              <%= link_to "Network Design and Support", services_path %>
             </li>
             <li>
-              <a href="one-page/index.html">Control Panel Fabrication</a>
+              <%= link_to "Control Panel Fabrication", services_path %>
             </li>
             <li>
-              <a href="one-page/index.html">Instrumentation and Electrical Services</a>
+              <%= link_to "Instrumentation and Electrical Services", services_path %>
             </li>
             <li>
-              <a href="one-page/index.html">Data Acquisition and Hosting Solutions</a>
+              <%= link_to "Data Acquisition and Hosting Solutions", services_path %>
             </li>
             <li>
-              <a href="one-page/index.html">Control Systems Audits</a>
+              <%= link_to "Control Systems Audits", services_path %>
             </li>
           </ul>
         </li>
         <li class="dropdown ">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">RSERVED ITEMS <i class="fa fa-angle-down"></i></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">RSERVED MENU <i class="fa fa-angle-down"></i></a>
           <ul class="dropdown-menu" role="menu">
             <li>
               <a href="ui-buttons.html">item 1</a>
@@ -74,42 +80,22 @@
             </li>
           </ul>
         </li>
-        <li class="dropdown ">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">CAREERS <i class="fa fa-angle-down"></i></a>
-          <ul class="dropdown-menu" role="menu">
-            <li>
-              <a href="portfolio-4-columns.html">item 1</a>
-            </li>
-            <li>
-              <a href="portfolio-3-columns.html">item 2</a>
-            </li>
-            <li>
-              <a href="portfolio-2-columns.html">item 3</a>
-            </li>
-            <li>
-              <a href="portfolio-single.html">item 4</a>
-            </li>
-          </ul>
-        </li>
-        <li class="dropdown ">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">BLOG <i class="fa fa-angle-down"></i></a>
-          <ul class="dropdown-menu" role="menu">
-            <li>
-              <a href="blog-medium-thumbnail.html">Blog Medium Thumbnail</a>
-            </li>
-            <li>
-              <a href="blog-full-thumbnail.html">Blog Full Thumbnail</a>
-            </li>
-            <li>
-              <a href="blog-single.html">Blog Single</a>
-            </li>
-            <li>
-              <a href="blog-single-full.html">Blog Single Full</a>
-            </li>
-          </ul>
-        </li>
         <li>
-          <a href="page-contacts.html">CONTACTS</a>
+          <%= link_to "CAREERS", careers_path %>
+        </li>
+        <li class="dropdown ">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">CONTACTS <i class="fa fa-angle-down"></i></a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <%= link_to "Head Office", contact_head_office_path %>
+            </li>
+            <li>
+              <%= link_to "Fort Saint John", contact_fort_saint_john_path %>
+            </li>
+            <li>
+              <%= link_to "Williston", contact_williston_path %>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>
