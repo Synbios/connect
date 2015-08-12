@@ -8,9 +8,9 @@
         <span class="sr-only">Toggle Navigation</span>
         <i class="fa fa-bars"></i>
       </button>
-      <a href="/" class="navbar-brand navbar-logo navbar-logo-bigger">
+      <%= link_to root_path, class: "navbar-brand navbar-logo navbar-logo-bigger" do %>
         <%= image_tag "logo.png", alt: "Company LOGO" %>
-      </a>
+      <% end %>
     </div>
 
     <!-- MAIN NAVIGATION -->

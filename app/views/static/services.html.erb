@@ -3,9 +3,7 @@
   <div class="container">
     <h1 class="page-title pull-left">OUR SERVICES</h1>
     <ol class="breadcrumb">
-      <li>
-        <a href="#">Home</a>
-      </li>
+      <li><%= link_to "Home", root_path %></li>
       <li class="active">Services</li>
     </ol>
   </div>
@@ -42,42 +40,28 @@
         </ul>
       </div>
       <div class="col-md-9">
-        <h3 id="control_systems_integrator">Control Systems Integrator</h3>
-        <p>Systems integration is a challenge that most producers eventually face. Knowing the many options available and having the know-how to apply them to your facility is an asset.</p>
-        <p>We can provide services such as:</p>
-        <ul>
-          <li>
-            suggestions to optimize productivity and equipment efficiency         
-          </li>
-          <li>
-            design solutions for control or safety additions
-          </li>
-          <li>
-            remote internet service and networking solutions
-          </li>
-          <li>
-            solutions for obsolete or damaged equipment        
-          </li>
-          <li>
-            solutions for expansion or additions to existing infrastructure
-          </li>
-        </ul>
-        <p>From concept to installation, we can supply control and network documentation such as:</p>        
-        <ul>
-          <li>engineered electrical I/O drawings</li>
-          <li>shutdown key or cause and effect diagrams</li>
-          <li>logic and control diagrams</li>
-          <li>process control network diagrams</li>
-          <li>design base memorandum or control philosophy</li>
-          <li>commissioning protocol</li>
-          <li>equipment control data sheets</li>
-        </ul>
-        <br/>
+        <!-- BOXED CONTENT -->
 
-        <h3 id="PLC_HMI">PLC / HMI Programming</h3>
-        <p>It's hard to believe the amount of companies that are currently using PLC contractors with little or no process experience. Clients of Connect have the advantage of a team of experienced personnel from project beginning to end, who can provide expertise in areas such as device location, component function and shutdown protocol. At Connect we strive to maximize production, while also ensuring that safety is a priority.</p>
-        <p>Connect adheres to the doctrine that "anything not known, is definitely worth knowing"</p>
-        <p>We pride ourselves in finding the equipment that best serves the customer. Through 20 years of hands-on hardware experience and utilization, we continually seek out manufacturer advancements and work with suppliers to provide new and innovative ways to complete projects on time and on budget.</p>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="boxed-content left-aligned left-boxed-icon">
+              <i class="fa fa-flag"></i>
+              <h2 class="boxed-content-title">Control Systems Integrator</h2>
+              <p>Systems integration is a challenge that most producers eventually face...</p>
+              <p class="text-right"><%= link_to "Learn more", service_control_systems_integrator_path %></p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="boxed-content left-aligned left-boxed-icon">
+              <i class="fa fa-globe"></i>
+              <h2 class="boxed-content-title">PLC / HMI Programming</h2>
+              <p>It's hard to believe the amount of companies that are currently using...</p>
+              <p class="text-right"><%= link_to "Learn more", service_PLC_HMI_path %></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- END BOXED CONTENT -->
         
       </div>
     </div>

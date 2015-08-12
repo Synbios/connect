@@ -8,6 +8,15 @@ Rails.application.routes.draw do
   match '/careers', to: 'static#careers', via: 'get'
   match '/about', to: 'static#about', via: 'get'
   match '/services', to: 'static#services', via: 'get'
+
+  match '/service_control_systems_integrator', to: 'static#service_control_systems_integrator', via: 'get'
+  match '/service_PLC_HMI', to: 'static#service_PLC_HMI', via: 'get'
+  match '/service_controls_systems_technical_support', to: 'static#service_controls_systems_technical_support', via: 'get'
+  match '/service_network_design_and_support', to: 'static#service_network_design_and_support', via: 'get'
+  match '/service_instrumentation_and_electrical_services', to: 'static#service_instrumentation_and_electrical_services', via: 'get'
+  match '/service_data_acquisition_and_hosting_solutions', to: 'static#service_data_acquisition_and_hosting_solutions', via: 'get'
+  match '/service_control_systems_audits', to: 'static#service_control_systems_audits', via: 'get'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

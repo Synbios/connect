@@ -1,11 +1,13 @@
-<title> About Us | Connect Control </title>
+<% content_for :page_title do %>
+  About Us | Connect Control
+<% end %>
 
 <!-- BREADCRUMBS -->
 <div class="page-header">
   <div class="container">
     <h1 class="page-title pull-left">ABOUT US</h1>
     <ol class="breadcrumb">
-      <li><a href="/"> Home </a></li>
+      <li><%= link_to "Home", root_path %></li>
       <li class="active"> About Us </li>
     </ol>
   </div>
