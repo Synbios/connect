@@ -20,7 +20,7 @@ default: &default
   pool: 5
   username: root
   host: localhost
-  password:
+  password: r1xFl1yW
   # adapter: postgresql
   # encoding: unicode
   # # For details on connection pooling, see rails configuration guide

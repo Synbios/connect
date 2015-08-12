@@ -105,7 +105,7 @@ hr {
 }
 .section-heading:after {
   display: block;
-  content: '......';
+  content: '';
   color: #406da4;
   font-weight: 300;
 }
@@ -126,8 +126,8 @@ hr {
   background-color: #dd4b39;
 }
 
-.rss-bg {
-  background-color: #ff6600;
+.linkedin-bg {
+  background-color: #007bb6;
 }
 
 /* page header */
@@ -3495,7 +3495,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   padding: 12px 15px;
 }
 .navbar-brand > img {
-  width: 100px;
+  width: 30px;
 }
 .navbar-brand.navbar-logo-bigger {
   padding: 0 0 0 10px;
@@ -4556,8 +4556,8 @@ ul.social-icons li a.twitter-bg:hover, ul.social-icons li a.twitter-bg:focus {
 ul.social-icons li a.googleplus-bg:hover, ul.social-icons li a.googleplus-bg:focus {
   background-color: #d73925;
 }
-ul.social-icons li a.rss-bg:hover, ul.social-icons li a.rss-bg:focus {
-  background-color: #e65c00;
+ul.social-icons li a.linkedin-bg:hover, ul.social-icons li a.linkedin:focus {
+  background-color: #007bb6;
 }
 ul.social-icons li a i {
   position: relative;

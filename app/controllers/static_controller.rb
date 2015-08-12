@@ -7,19 +7,16 @@ class StaticController < ApplicationController
     render layout: "general"
   end
 
+  def experience
+    render layout: "general"
+
+  end
+  
   def services
     render layout: "general"
   end
 
   def contact_head_office
-    render layout: "general"
-  end
-
-  def contact_fort_saint_john
-    render layout: "general"
-  end
-
-  def contact_williston
     render layout: "general"
   end
 
