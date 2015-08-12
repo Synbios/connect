@@ -12,7 +12,7 @@ class StaticController < ApplicationController
 
   end
 
-  def contact_head_office
+  def contacts
     render layout: "general"
   end
 
@@ -29,31 +29,35 @@ class StaticController < ApplicationController
   end
   
   # methods for static service pages
-  def service_control_systems_integrator
-    render layout: "general"
+  def services_control_systems_integrator
+    render layout: "services"
   end
 
-  def service_PLC_HMI
-    render layout: "general"
+  def services_PLC_HMI
+    render layout: "services"
   end
 
-  def service_controls_systems_technical_support
-    render layout: "general"
+  def services_controls_systems_technical_support
+    render layout: "services"
   end
 
-  def service_network_design_and_support
-    render layout: "general"
+  def services_network_design_and_support
+    render layout: "services"
   end
 
-  def service_instrumentation_and_electrical_services
-    render layout: "general"
+  def services_control_panel_fabrication
+    render layout: "services"
+  end
+  
+  def services_instrumentation_and_electrical_services
+    render layout: "services"
   end
 
-  def service_data_acquisition_and_hosting_solutions
-    render layout: "general"
+  def services_data_acquisition_and_hosting_solutions
+    render layout: "services"
   end
 
-  def service_control_systems_audits
-    render layout: "general"
+  def services_control_systems_audits
+    render layout: "services"
   end
 end

@@ -1,4 +1,11 @@
 /* Skin: Orange */
+
+h1{
+  color: #FF4500; 
+  font-weight: bold;
+}
+
+
 a {
   color: #FF4500;
 }
