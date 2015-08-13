@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <head>
-  <title><%= yield(:page_title) %></title>
+  <title> Home | Connect Control </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Responsive Multipurpose Bootstrap Theme">
   <meta name="author" content="Connect Control Systems">
 
   <!-- CSS -->
+  <!-- bootstrap & fontawesome & main -->
+  <%#= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <link href="/stylesheets/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="/stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css"> 
   <link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
@@ -25,7 +27,7 @@
   <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/repute144x144.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/repute114x114.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/repute72x72.png">
-  <link rel="apple-touch-icon-precomposed" href="assets/ico/repute57x57.png">
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/repute57x57.png"> 
   <link rel="shortcut icon" href="assets/ico/favicon.png"> -->
 </head>
 
@@ -36,7 +38,15 @@
     <%= render "layouts/main_navbar" %>
     <!-- END MAIN NAVBAR -->
 
+    <!-- MAIN HERO UNIT SLIDER -->
+    <%= render "layouts/main_slider" %>
+    <!-- END MAIN HERO UNIT SLIDER -->
+
     <%= yield %>
+
+    <!-- NEWS -->
+    <%= render "layouts/news" %>
+    <!-- END NEWS -->
 
     <!-- FOOTER -->
     <%= render "layouts/footer" %>
@@ -47,12 +57,9 @@
   <!-- JAVASCRIPTS -->
   <script src="/javascripts/jquery-2.1.1.min.js"></script>
   <script src="/javascripts/bootstrap.min.js"></script>
-
-  <script src="/javascripts/plugins/fitvids/jquery.fitvids.js"></script>
-  <script src="/javascripts/plugins/autohidingnavbar/jquery.bootstrap-autohidingnavbar.min.js"></script>
-
-  <script src="/javascripts/plugins/google-map/google-map.js"></script>
-  <script src="/javascripts/plugins/parsley-validation/parsley.min.js"></script>
+  <script src="/javascripts/plugins/slick/slick.min.js"></script>
+  <script src="/javascripts/plugins/stellar/jquery.stellar.min.js"></script>
+  <script src="/javascripts/plugins/jquery-easypiechart/jquery.easypiechart.min.js"></script>
   <script src="/javascripts/plugins/autohidingnavbar/jquery.bootstrap-autohidingnavbar.min.js"></script>
   <script src="/javascripts/repute-scripts.js"></script>
 

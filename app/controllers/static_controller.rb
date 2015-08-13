@@ -1,18 +1,19 @@
 class StaticController < ApplicationController
+  
+  # methods for functional pages
   def home
-    render layout: "home"
+    render layout: "layout_home"
   end
 
   def about
     render layout: "general"
   end
 
-  def experience
+  def services
     render layout: "general"
-
   end
 
-  def contacts
+  def experience
     render layout: "general"
   end
 
@@ -20,44 +21,62 @@ class StaticController < ApplicationController
     render layout: "general"
   end
 
-  def safty
+  def contacts
     render layout: "general"
   end
 
-  def services
+  def reserved
     render layout: "general"
   end
   
   # methods for static service pages
   def services_control_systems_integrator
-    render layout: "services"
+    render layout: "layout_services"
   end
 
-  def services_PLC_HMI
-    render layout: "services"
+  def services_plc_hmi
+    render layout: "layout_services"
   end
 
   def services_controls_systems_technical_support
-    render layout: "services"
+    render layout: "layout_services"
   end
 
   def services_network_design_and_support
-    render layout: "services"
+    render layout: "layout_services"
   end
 
   def services_control_panel_fabrication
-    render layout: "services"
+    render layout: "layout_services"
   end
   
   def services_instrumentation_and_electrical_services
-    render layout: "services"
+    render layout: "layout_services"
   end
 
   def services_data_acquisition_and_hosting_solutions
-    render layout: "services"
+    render layout: "layout_services"
   end
 
   def services_control_systems_audits
-    render layout: "services"
+    render layout: "layout_services"
   end
+
+  # methods for static experience pages
+  def experience_conventional_oil_and_gas
+    render layout: "layout_experience"
+  end 
+
+  def experience_power_generation
+    render layout: "layout_experience"
+  end
+
+  def experience_waste_water_and_waste_treatment
+    render layout: "layout_experience"
+  end
+
+  def experience_industrial_process_application
+    render layout: "layout_experience"
+  end
+
 end

@@ -1,21 +1,16 @@
 <!DOCTYPE html>
 <head>
-  <title> Home | Connect Control </title>
+  <title> Experiences | Connect Control</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Responsive Multipurpose Bootstrap Theme">
-  <meta name="author" content="The Develovers">
+  <meta name="author" content="Connect Control Systems">
 
   <!-- CSS -->
-  <!-- bootstrap & fontawesome & main -->
-  <%#= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <link href="/stylesheets/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="/stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css"> 
   <link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
-
-  <!-- your skin -->
   <link href="/stylesheets/skins/orange.css" rel="stylesheet" type="text/css">
-  <!-- end your skin -->
 
   <!-- IE 9 Fallback-->
   <!--[if IE 9]>
@@ -30,7 +25,7 @@
   <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/repute144x144.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/repute114x114.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/repute72x72.png">
-  <link rel="apple-touch-icon-precomposed" href="assets/ico/repute57x57.png"> 
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/repute57x57.png">
   <link rel="shortcut icon" href="assets/ico/favicon.png"> -->
 </head>
 
@@ -41,15 +36,26 @@
     <%= render "layouts/main_navbar" %>
     <!-- END MAIN NAVBAR -->
 
-    <!-- MAIN HERO UNIT SLIDER -->
-    <%= render "layouts/main_slider" %>
-    <!-- END MAIN HERO UNIT SLIDER -->
+    <!-- BREADCRUMBS -->
+    <div class="page-header">
+      <div class="container">
+        <h1 class="page-title pull-left"> OUR EXPERIENCE - <%= yield(:experience_title) %></h1>
+        <ol class="breadcrumb">
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "Services", services_path %></li>
+          <li class="active"><%= yield(:experience_title) %></li>
+        </ol>
+      </div>
+    </div>
+    <!-- END BREADCRUMBS -->
 
-    <%= yield %>
-
-    <!-- NEWS -->
-    <%= render "layouts/news" %>
-    <!-- END NEWS -->
+    <!-- PAGE CONTENT -->
+    <div class="page-content">
+      <div class="container">
+        <%= yield %>
+      </div>
+    </div>
+    <!-- END PAGE CONTENT -->
 
     <!-- FOOTER -->
     <%= render "layouts/footer" %>
@@ -60,9 +66,12 @@
   <!-- JAVASCRIPTS -->
   <script src="/javascripts/jquery-2.1.1.min.js"></script>
   <script src="/javascripts/bootstrap.min.js"></script>
-  <script src="/javascripts/plugins/slick/slick.min.js"></script>
-  <script src="/javascripts/plugins/stellar/jquery.stellar.min.js"></script>
-  <script src="/javascripts/plugins/jquery-easypiechart/jquery.easypiechart.min.js"></script>
+
+  <script src="/javascripts/plugins/fitvids/jquery.fitvids.js"></script>
+  <script src="/javascripts/plugins/autohidingnavbar/jquery.bootstrap-autohidingnavbar.min.js"></script>
+
+  <script src="/javascripts/plugins/google-map/google-map.js"></script>
+  <script src="/javascripts/plugins/parsley-validation/parsley.min.js"></script>
   <script src="/javascripts/plugins/autohidingnavbar/jquery.bootstrap-autohidingnavbar.min.js"></script>
   <script src="/javascripts/repute-scripts.js"></script>
 
