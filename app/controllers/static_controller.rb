@@ -66,4 +66,9 @@ class StaticController < ApplicationController
     render layout: "layout_services"
   end
 
+  # methods for static project gallery pages
+  def projects_sample
+    render layout: "layout_projects"
+  end
+  
 end
