@@ -22,11 +22,8 @@
   <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,400italic,700,400,300' rel='stylesheet' type='text/css'>
 
   <!-- FAVICONS -->
-  <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/repute144x144.png">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/repute114x114.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/repute72x72.png">
-  <link rel="apple-touch-icon-precomposed" href="assets/ico/repute57x57.png">
-  <link rel="shortcut icon" href="assets/ico/favicon.png"> -->
+  <link rel="shortcut icon" href="favicon.png">
+  
 </head>
 
 <body>
@@ -39,11 +36,11 @@
     <!-- BREADCRUMBS -->
     <div class="page-header">
       <div class="container">
-        <h1 class="page-title pull-left"> OUR EXPERIENCE - <%= yield(:experience_title) %></h1>
+        <h1 class="page-title pull-left"> Projects Gallery - <%= yield(:project_title) %></h1>
         <ol class="breadcrumb">
           <li><%= link_to "Home", root_path %></li>
-          <li><%= link_to "Services", services_path %></li>
-          <li class="active"><%= yield(:experience_title) %></li>
+          <li><%= link_to "Experience", services_path %></li>
+          <li class="active"><%= yield(:project_title) %></li>
         </ol>
       </div>
     </div>
