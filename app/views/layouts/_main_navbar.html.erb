@@ -4,10 +4,10 @@
     <div class="topbar">
       <ul class="list-inline top-nav">
         <li>
-          <a href="#">Help</a>
+          <%= link_to "Help", under_construction_page_path %>
         </li>
         <li>
-          <a href="#">Support</a>
+          <%= link_to "Support", under_construction_page_path %>
         </li>
       </ul>
       <div class="searchbox">
@@ -47,15 +47,7 @@
             <li><%= link_to "Control Systems Audits", services_control_systems_audits_path %></li>
           </ul>
         </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"  onclick="location.href='/experience'"> EXPERIENCE <i class="fa fa-angle-down"></i></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><%= link_to "Conventional Oil and Gas", experience_conventional_oil_and_gas_path %></li>
-            <li><%= link_to "Power Generation", experience_power_generation_path %></li>
-            <li><%= link_to "Waste Water and Waste Treatment", experience_waste_water_and_waste_treatment_path %></li>
-            <li><%= link_to "Industrial Process Application", experience_industrial_process_application_path %></li>
-          </ul>
-        </li>
+        <li><%= link_to "EXPERIENCE", experience_path %></li>
         <li><%= link_to "CAREERS", careers_path %></li>
         <li><%= link_to "CONTACTS", contacts_path %></li>
         <li><%= link_to "RESERVED", reserved_path %></li>

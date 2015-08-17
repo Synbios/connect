@@ -28,6 +28,10 @@ class StaticController < ApplicationController
   def reserved
     render layout: "general"
   end
+
+  def under_construction_page
+    render layout: "general"
+  end
   
   # methods for static service pages
   def services_control_systems_integrator
@@ -60,23 +64,6 @@ class StaticController < ApplicationController
 
   def services_control_systems_audits
     render layout: "layout_services"
-  end
-
-  # methods for static experience pages
-  def experience_conventional_oil_and_gas
-    render layout: "layout_experience"
-  end 
-
-  def experience_power_generation
-    render layout: "layout_experience"
-  end
-
-  def experience_waste_water_and_waste_treatment
-    render layout: "layout_experience"
-  end
-
-  def experience_industrial_process_application
-    render layout: "layout_experience"
   end
 
 end
