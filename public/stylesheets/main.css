@@ -3433,6 +3433,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 /* ----------------------------------------------------- */
 /* NAVBAR
 /* ----------------------------------------------------- */
+
 /* top bar */
 .topbar {
   text-align: right;
@@ -3502,8 +3503,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 .navbar-brand.navbar-logo-bigger > img {
   position: relative;
-  top: 13px;
-  width: 110px;
+  top:-20px;
+  height: 80px;
+  width: 190px;
 }
 
 .navbar-toggle {
@@ -3576,10 +3578,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   transition: all 0.3s ease-out;
 }
 .navbar-fixed-top.shrink-active {
-  top: -42px;
+  top: -45px;
 }
 .navbar-fixed-top.shrink-active .navbar-brand > img {
-  width: 90px;
+  width: 190px;
 }
 .navbar-fixed-top .navbar-nav {
   margin-right: -10px;
@@ -3648,11 +3650,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     overflow-y: auto !important;
   }
 
-  .navbar-header,
   .navbar-nav,
   .navbar-nav > li {
     float: none !important;
-  }
+  }navbar-header
 
   .navbar-default .navbar-nav {
     margin-right: 0;
