@@ -3835,8 +3835,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   text-shadow: none;
 }
 .hero-unit-slider .hero-heading {
+  font-weight: bold;
   font-size: 50px;
-  color: #fff;
+  color: #FF4500;
 }
 .hero-unit-slider .hero-button {
   border: 3px solid #fff;

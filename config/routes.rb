@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   match '/services_control_systems_audits', to: 'static#services_control_systems_audits', via: 'get'
 
   match '/projects_sample', to: 'static#projects_sample', via: 'get'
+   match '/projects_single_well_battery_site', to: 'static#projects_single_well_battery_site', via: 'get'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
