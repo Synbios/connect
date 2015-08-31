@@ -75,4 +75,8 @@ class StaticController < ApplicationController
     render layout: "layout_projects"
   end
 
+  def projects_gas_plant
+    render layout: "layout_projects"
+  end
+
 end
