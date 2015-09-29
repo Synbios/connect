@@ -1,3 +1,9 @@
+<% content_for(:page_title) do %>Home | Connect Control<% end %>
+
+<!-- MAIN HERO UNIT SLIDER -->
+<%= render "layouts/main_slider" %>
+<!-- END MAIN HERO UNIT SLIDER -->
+
 <!-- INTRO -->
 <section>
   <div class="container">
@@ -9,10 +15,22 @@
       </div>
       <div class="col-md-6">
         <div class="featured-video">
-          <object data="http://www.youtube.com/embed/fgExvIUYg5w" width="555" height="395"></object>
+          <object data="https://www.youtube.com/embed/fgExvIUYg5w" width="555" height="395"></object>
         </div>
       </div>
     </div>
   </div>
 </section>
 <!-- END INTRO -->
+
+<!-- NEWS -->
+<%= render "layouts/news" %>
+<!-- END NEWS -->
+    
+<%= render "layouts/callto_action" %>
+
+<% content_for(:scripts) do %>
+  <script src="/javascripts/plugins/slick/slick.min.js"></script>
+  <script src="/javascripts/plugins/stellar/jquery.stellar.min.js"></script>
+  <script src="/javascripts/plugins/jquery-easypiechart/jquery.easypiechart.min.js"></script>
+<% end %>

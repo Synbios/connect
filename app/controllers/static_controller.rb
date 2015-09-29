@@ -2,7 +2,7 @@ class StaticController < ApplicationController
   
   # methods for functional pages
   def home
-    render layout: "layout_home"
+    render layout: "general"
   end
 
   def about
