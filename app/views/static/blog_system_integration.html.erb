@@ -1,0 +1,125 @@
+<% content_for :page_title do %>
+  Blog | Connect Control
+<% end %>
+
+<% content_for :blog_title do%>
+	A standardized solution for integrated control
+<% end %>
+
+<!-- BREADCRUMBS -->
+<div class="page-header">
+  <div class="container">
+    <h1 class="page-title pull-left"> BLOG </h1>
+    <ol class="breadcrumb">
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "Blog", blog_path %></li>
+      <li class="active"><%= yield(:blog_title) %></li>
+    </ol>
+  </div>
+</div>
+<!-- END BREADCRUMBS -->
+
+<!-- PAGE CONTENT -->
+<div class="page-content">
+  <div class="container">
+    <!-- BLOG SINGLE -->
+    <div class="blog single full-thumbnail">
+      <!-- blog post -->
+      <article class="entry-post">
+        <header class="entry-header">
+          <h2 class="entry-title"><%= yield(:blog_title) %></h2>
+          <div class="meta-line clearfix">
+            <div class="meta-author-category pull-left">
+              <span class="post-author">by <a href="#">Author X</a></span>
+              <span class="post-category">From: <a href="#">Connect Control Systmes, Inc</a></span>
+            </div>
+            <div class="meta-tag-comment pull-right">
+              <span class="post-tags"><i class="fa fa-tag"></i> <a href="#">Programming</a></span>
+            </div>
+          </div>
+        </header>
+        <div class="entry-content clearfix">
+          <figure class="featured-image">
+            <div class="post-date-info clearfix"><span class="post-month">OCT</span><span class="post-date">01</span><span class="post-year">2015</span></div>
+                <img src="img/blog/buildings.jpg" class="img-responsive" alt="featured-image" />
+          </figure>
+          <div class="excerpt">
+            <p>Recent trends in the power industry call for reducing the project execution cycle along with improving interoperability and maintenance throughout the plant. To support this growing trend, integrated control systems with scalable, modular architectures are being used to successfully adapt to the constantly evolving requirements of industries, such as oil & gas, chemical processing, and power generation. To read more about the benefits of implementing a single integrated system for control, protection, and safety, download this informative white paper...</p>
+          </div>
+        </div>
+      </article>
+        <!-- end blog post -->
+      <hr>
+      <!-- social sharing -->
+      <div class="social-sharing clearfix">
+        <h3 class="section-heading pull-left">Share This blog: </h3>
+        <ul class="list-inline sharing-tools">
+          <li>
+            <a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#" class="googleplus-bg"><i class="fa fa-google-plus"></i></a>
+          </li>
+          <li>
+            <a href="#" class="rss-bg"><i class="fa fa-rss"></i></a>
+          </li>
+        </ul>
+      </div>
+      <!-- end social sharing -->
+      <hr>
+      <!-- related post -->
+      <section>
+        <h3 class="section-heading">Related Articles</h3>
+        <ul class="list-unstyled related-post-list row">
+          <li class="col-md-4">
+            <a href="#">
+              <img src="img/blog/people-med.jpg" class="img-responsive" alt="Related Post">
+            </a>
+            <a href="#" class="post-title">Related Title 1</a>
+          </li>
+          <li class="col-md-4">
+            <a href="#">
+              <img src="img/blog/buildings-med.jpg" class="img-responsive" alt="Related Post">
+            </a>
+            <a href="#" class="post-title">Related Title 2</a>
+          </li>
+          <li class="col-md-4">
+            <a href="#">
+              <img src="img/blog/balloon-med.jpg" class="img-responsive" alt="Related Post">
+            </a>
+            <a href="#" class="post-title">Related Title 3</a>
+          </li>
+        </ul>
+      </section>
+      <!-- end related post -->
+      <hr>
+        <!-- comments -->
+      <article class="comments">
+        <h3 class="section-heading">Comments (1)</h3>
+        <ul class="media-list">
+          <li class="media">
+            <div class="media child">
+              <a href="#" class="media-left">
+                <span class="avatar anonymous"><i class="fa fa-user"></i></span>
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading comment-author"><a href="#">Anonymous</a></h4><span class="timestamp text-muted">1 hours ago</span>
+                <p>Some comments.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </article>
+      <!-- end comments -->
+      <hr>
+      <!-- COMMENT FORM -->
+      <%= render "contact_form" %>
+      <!-- END COMMENT FORM -->
+    </div>
+    <!-- END BLOG SINGLE -->
+  </div>
+</div>
+<!-- END PAGE CONTENT -->

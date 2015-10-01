@@ -1,0 +1,177 @@
+<% content_for :page_title do %>
+  Blog | Connect Control
+<% end %>
+
+<!-- BREADCRUMBS -->
+<div class="page-header">
+  <div class="container">
+    <h1 class="page-title pull-left"> BLOG COMPONENTS </h1>
+    <ol class="breadcrumb">
+      <li><%= link_to "Home", root_path %></li>
+      <li class="active"> Blog </li>
+    </ol>
+  </div>
+</div>
+<!-- END BREADCRUMBS -->
+
+<!-- PAGE CONTENT -->
+<div class="page-content">
+  <div class="container">
+    <div class="row">
+      <!-- BLOG ENTRIES -->
+      <div class="col-md-9">
+        <div class="blog medium-thumbnail margin-bottom-30px">
+          <!-- Blog 1 -->
+          <article class="entry-post">
+            <header class="entry-header">
+              <h2 class="entry-title">
+                <a href="blog-single.html">A standardized solution for integrated control</a>
+              </h2>
+              <div class="meta-line clearfix">
+                <div class="meta-author-category pull-left">
+                  <span class="post-author">by <a href="#">Author X</a></span>
+                  <span class="post-category">From: <a href="#">Connect Control Systems, Inc.</a></span>
+                </div>
+                <div class="meta-tag-comment pull-right">
+                  <span class="post-tags"><i class="fa fa-tag"></i> <a href="#">Programming</a></span>
+                </div>
+              </div>
+            </header>
+            <div class="entry-content clearfix">
+              <div class="row">
+                <div class="col-sm-5">
+                  <figure class="featured-image">
+                    <a href="blog-single.html">
+                      <div class="post-date-info clearfix"><span class="post-month">OCT</span><span class="post-date">01</span><span class="post-year">2015</span></div>
+                          <img src="img/blog/buildings-med.jpg" class="img-responsive" alt="featured-image">
+                    </a>
+                  </figure>
+                </div>
+                <div class="col-sm-7">
+                  <div class="excerpt">
+                    <p>Recent trends in the power industry call for reducing the project execution cycle along with improving interoperability and maintenance throughout the plant. To support this growing trend, integrated control systems with scalable, modular architectures are being used to successfully adapt to the constantly evolving requirements of industries, such as oil & gas, chemical processing, and power generation. To read more about the benefits of implementing a single integrated system for control, protection, and safety, download this informative white paper...</p>
+                    <p class="read-more">
+                      <%= link_to "Read more", blog_system_integration_path %>
+                      <i class="fa fa-long-arrow-right"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- end Blog 1-->
+          <hr>
+          <!-- Blog 2 -->
+          <article class="entry-post">
+            <header class="entry-header">
+              <h2 class="entry-title">
+                <a href="blog-single.html">A standardized solution for integrated control</a>
+              </h2>
+              <div class="meta-line clearfix">
+                <div class="meta-author-category pull-left">
+                  <span class="post-author">by <a href="#">Author X</a></span>
+                  <span class="post-category">From: <a href="#">Connect Control Systems, Inc.</a></span>
+                </div>
+                <div class="meta-tag-comment pull-right">
+                  <span class="post-tags"><i class="fa fa-tag"></i> <a href="#">Programming</a></span>
+                </div>
+              </div>
+            </header>
+            <div class="entry-content clearfix">
+              <div class="row">
+                <div class="col-sm-5">
+                  <figure class="featured-image">
+                    <a href="blog-single.html">
+                      <div class="post-date-info clearfix"><span class="post-month">OCT</span><span class="post-date">01</span><span class="post-year">2015</span></div>
+                          <img src="img/blog/buildings-med.jpg" class="img-responsive" alt="featured-image">
+                    </a>
+                  </figure>
+                </div>
+                <div class="col-sm-7">
+                  <div class="excerpt">
+                    <p>Recent trends in the power industry call for reducing the project execution cycle along with improving interoperability and maintenance throughout the plant. To support this growing trend, integrated control systems with scalable, modular architectures are being used to successfully adapt to the constantly evolving requirements of industries, such as oil & gas, chemical processing, and power generation. To read more about the benefits of implementing a single integrated system for control, protection, and safety, download this informative white paper...</p>
+                    <p class="read-more">
+                      <%= link_to "Read more", blog_system_integration_path %>
+                      <i class="fa fa-long-arrow-right"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- end Blog 2-->
+        </div>
+
+        <ul class="pager">
+          <li><a href="#">Previous</a></li>
+          <li><a href="#">Next</a></li>
+        </ul>
+      </div>
+      <!-- END BLOG ENTRIES -->
+
+      <!-- SIDEBAR -->
+      <div class="col-md-3">
+        <!-- search form -->
+        <div class="widget">
+          <form action="#" class="form-search">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="enter search term">
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="button">Search</button>
+              </span>
+            </div>
+          </form>
+        </div>
+        <!-- end search form -->
+
+        <!-- categories -->
+        <div class="widget">
+          <h4 class="widget-title">CATEGORIES</h4>
+          <ul class="list-unstyled category-list">
+            <li><a href="#">Sofeware (0)</a></li>
+            <li><a href="#">R&D (0)</a></li>
+            <li><a href="#">Programming (1)</a></li>
+          </ul>
+        </div>
+        <!-- end categories -->
+
+        <!-- tags -->
+            <div class="widget">
+              <h4 class="widget-title">TAGS</h4>
+              <ul class="list-inline tag-list">
+                <li>
+                  <a href="#">ControlLogix</a>
+                </li>
+                <li>
+                  <a href="#">FactoryTalk</a>
+                </li>
+                <li>
+                  <a href="#">PLC</a>
+                </li>
+                <li>
+                  <a href="#">HMI</a>
+                </li>
+                <li>
+                  <a href="#">Commissioning</a>
+                </li>
+                <li>
+                  <a href="#">Networking</a>
+                </li>
+                <li>
+                  <a href="#">Control Panel</a>
+                </li>
+                <li>
+                  <a href="#">New Project</a>
+                </li>
+                <li>
+                  <a href="#">Development</a>
+                </li>
+              </ul>
+            </div>
+            <!-- end tags -->
+          </div>
+      <!-- END SIDEBAR -->
+    </div>
+  </div>
+</div>
+<!-- END PAGE CONTENT -->

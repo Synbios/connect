@@ -1,5 +1,64 @@
+<% content_for :page_title do %>
+  Services | Connect Control
+<% end %>
+
 <% content_for :services_title do %>
   Control Systems Audits
 <% end %>
 
-<p>In organizations where computer based information systems play a significant role in achieving business goals and critical success factors, the effectiveness of general management and controls exercised over these information systems is critical to the success of the organization. The prerequisites for effective management are appropriate plans, staffing structures, policies, standards, procedures, methods and controls within the IS environment. Without those, the risks of failure are greatly increased. In this framework, we ensure that we perform audits regularly to ensure companies are performing efficiently.</p>
+<!-- BREADCRUMBS -->
+<div class="page-header">
+  <div class="container">
+    <h1 class="page-title pull-left">OUR SERVICES - <%= yield(:services_title) %></h1>
+    <ol class="breadcrumb">
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "Services", services_path %></li>
+      <li class="active"><%= yield(:services_title) %></li>
+    </ol>
+  </div>
+</div>
+<!-- END BREADCRUMBS -->
+
+<!-- PAGE CONTENT -->
+<div class="page-content">
+  <div class="container">
+    <div class="row">
+      <!-- BOXED CONTENT -->
+      <div class="col-md-3">
+        <ul id="sidebar-nav" class="sidebar-nav margin-bottom-30px">
+          <li class="list-group-item ">
+            <%= link_to "Control Systems Integrator", services_control_systems_integrator_path %>
+          </li>
+          <li class="list-group-item ">
+            <%= link_to "PLC / HMI Programming", services_plc_hmi_path %>
+          </li>
+          <li class="list-group-item ">
+            <%= link_to "Controls Systems Technical Support", services_controls_systems_technical_support_path %>
+          </li>
+          <li class="list-group-item ">
+            <%= link_to "Network Design and Support", services_network_design_and_support_path %>
+          </li>
+          <li class="list-group-item ">
+            <%= link_to "Control Panel Fabrication", services_control_panel_fabrication_path %>
+          </li>      
+          <li class="list-group-item ">
+            <%= link_to "Instrumentation and Electrical Services", services_instrumentation_and_electrical_services_path %>
+          </li>
+          <li class="list-group-item ">
+            <%= link_to "Data Acquisition and Hosting Solutions", services_data_acquisition_and_hosting_solutions_path %>
+          </li>
+          <li class="list-group-item ">
+            <%= link_to "Control Systems Audits", services_control_systems_audits_path %>
+          </li>
+        </ul>
+      </div>
+      <!-- END BOXED CONTENT -->
+
+      <div class="col-md-9">
+        <p>In organizations where computer based information systems play a significant role in achieving business goals and critical success factors, the effectiveness of general management and controls exercised over these information systems is critical to the success of the organization. The prerequisites for effective management are appropriate plans, staffing structures, policies, standards, procedures, methods and controls within the IS environment. Without those, the risks of failure are greatly increased. In this framework, we ensure that we perform audits regularly to ensure companies are performing efficiently.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END PAGE CONTENT -->
+

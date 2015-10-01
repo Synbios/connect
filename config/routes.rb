@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   match '/experience', to: 'static#experience', via: 'get'
   match '/careers', to: 'static#careers', via: 'get'
   match '/contacts', to: 'static#contacts', via: 'get'
-  match '/reserved', to: 'static#reserved', via: 'get'
+  match '/resources', to: 'static#resources', via: 'get'
+  match '/blog', to: 'static#blog', via: 'get'
   match '/under_construction_page', to: 'static#under_construction_page', via: 'get'
 
   match '/services_control_systems_integrator', to: 'static#services_control_systems_integrator', via: 'get'
@@ -21,6 +22,8 @@ Rails.application.routes.draw do
   match '/projects_sample', to: 'static#projects_sample', via: 'get'
   match '/projects_single_well_battery_site', to: 'static#projects_single_well_battery_site', via: 'get'
   match '/projects_gas_plant', to: 'static#projects_gas_plant', via: 'get'
+
+  match '/blog_system_integration', to: 'static#blog_system_integration', via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

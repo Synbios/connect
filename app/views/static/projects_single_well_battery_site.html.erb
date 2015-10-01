@@ -1,12 +1,27 @@
+<% content_for :page_title do %>
+  Experience | Connect Control
+<% end %>
+
 <% content_for :project_title do %>
   Single Well Battery Site
 <% end %>
 
+<!-- BREADCRUMBS -->
+<div class="page-header">
+  <div class="container">
+    <h1 class="page-title pull-left"> Projects Gallery - <%= yield(:project_title) %></h1>
+    <ol class="breadcrumb">
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "Experience", experience_path %></li>
+      <li class="active"><%= yield(:project_title) %></li>
+    </ol>
+  </div>
+</div>
+<!-- END BREADCRUMBS -->
+
 <!-- PAGE CONTENT -->
 <div class="page-content">
-  <div class="container">    
-    
-
+  <div class="container">
     <div class="portfolio-static">
       <div class="row">
         <div class="col-md-6">
@@ -79,3 +94,6 @@
     </section>
   </div>
 </div>
+<!-- END PAGE CONTENT -->
+
+
