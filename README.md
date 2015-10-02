@@ -1,2 +1,2 @@
 # connect
-Connect Control Systems website
+Connect Control Systems, Inc. Website
