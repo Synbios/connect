@@ -19,8 +19,9 @@
   <div class="container">
   	<section>
   	 <h2>Resources for downloading...</h2>
-     <a href="http://literature.rockwellautomation.com/idc/groups/literature/documents/br/1761-br006_-cs-p.pdf">
+     <a href="#" data-toggle="modal" data-target="#visitor_info">
      MicroLogix 1400 Programmable Logic Controller Systems</a>
+     <br>
 
      <a href="http://literature.rockwellautomation.com/idc/groups/literature/documents/br/1761-br006_-cs-p.pdf">
      Connect Control Systems Product Information</a>
@@ -30,3 +31,37 @@
 </div>
 
 <!-- END PAGE CONTENT -->
+
+
+<!-- MODAL -->
+<div class="modal fade" id="visitor_info" tabindex="-1" role="dialog" aria-labelledby="visitor_info_label">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-body">
+        <%= form_for Visitor.new, remote:true, :authenticity_token => true, :html => {:role => "form", :class => "form-horizontal", :id => "visitor_form" } do |f| %>
+
+          <h3>Please leave your contact information: </h3>
+          <br>
+          <div class="form-group">
+            <%= f.label :email, "Email", class: "control-label sr-only" %>
+            <div class="col-sm-12">
+              <div class="input-group">
+                <%= f.text_field :email, class: "form-control", placeholder: "Email" %>
+                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+              </div>
+            </div>
+            
+          </div>
+          <p class="text-center">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Start downloading</button>
+          </p>
+        <% end %>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END MODAL -->

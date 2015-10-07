@@ -1,0 +1,39 @@
+<% content_for :page_title do %>
+  Admin - visitor info
+<% end %>
+
+<!-- BREADCRUMBS -->
+<div class="page-header">
+  <div class="container">
+    <h1 class="page-title pull-left">ABOUT US</h1>
+    <ol class="breadcrumb">
+      <li><%= link_to "Home", root_path %></li>
+      <li class="active"> About Us </li>
+    </ol>
+  </div>
+</div>
+<!-- END BREADCRUMBS -->
+
+<!-- PAGE CONTENT -->
+<div class="page-content">
+  <div class="container">
+
+    <table class="table table-striped">
+      <tr>
+        <th>Time</th>
+        <th>Email</th>
+        <th>File</th>
+      </tr>
+      <% @visitors.each do |visitor| %>
+      <tr>
+        <td><%= visitor.created_at.in_time_zone('Eastern Time (US & Canada)').strftime("%Y-%m-%d %H:%M") %></td>
+        <td><%= visitor.email %></td>
+        <td>To be added</td>
+      </tr>
+      <% end %>
+    </table>    
+    <p class="text-center"><button class="btn btn-primary">Empty list</button></p>
+    
+  </div>
+</div>
+<!-- END PAGE CONTENT -->
