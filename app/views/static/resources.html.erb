@@ -35,7 +35,7 @@
       <%= render "resource_list_plain" %>
       
       <div class="text-center" id="control_buttons">
-        <button data-toggle="modal" data-target="#visitor_info" class="text-center btn btn-lg btn-info">
+        <button data-toggle="modal" data-target="#visitor_info" class="text-center btn btn-lg btn-primary" >
           Download resources <i class="fa fa-cloud-download fa-lg"></i>
         </button>
       </div>
@@ -69,7 +69,7 @@
           </div>
           <p class="text-center">
             <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            <button type="submit" class="btn btn-primary">Proceed to file links <i class="fa fa-arrow-right"></i></button>
+            <button type="submit" class="btn btn-primary" data-loading-text="Proceeding...">Proceed to file links <i class="fa fa-arrow-right"></i></button>
           </p>
         <% end %>
         
