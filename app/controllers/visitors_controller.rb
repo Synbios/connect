@@ -20,13 +20,16 @@ class VisitorsController < ApplicationController
 
   def destroy
     respond_to do |format|
-      format.js {
-        @visitor = Visitor,find_by(id: params[:id])
+      format.html {
+        @visitor = Visitor.find_by(id: params[:id])
+        
         if @visitor.destroy
-          render "success", :status => :created, :layout => false
+          redirect_to visitors_path
         else
-          render "failed", :status => :unprocessable_entity, :layout => false
-        end 
+          @visitors = Visitor.all
+          @error = "Delete failed"
+          render "index", layout: "general"
+        end
       }
     end
   end

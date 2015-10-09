@@ -1,3 +1,3 @@
-window.open('resource/Brochure_01.pdf','_blank'); 
-//window.location.replace("http://literature.rockwellautomation.com/idc/groups/literature/documents/br/1761-br006_-cs-p.pdf")
 $('#visitor_info').modal('hide');
+$('#resource_list').replaceWith('<%=j render 'static/resource_list_active.html.erb' %>');
+$('#control_buttons').hide();
