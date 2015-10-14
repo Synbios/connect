@@ -34,9 +34,9 @@
 
       <%= render "resource_list_plain" %>
       
-      <div class="text-center" id="control_buttons" color="#FF4500">
-        <button data-toggle="modal" data-target="#visitor_info" class="btn btn-primary" type="button">
-          Download <i class="fa fa-cloud-download"></i>
+      <div class="text-center" id="control_buttons">
+        <button data-toggle="modal" data-target="#visitor_info" class="text-center btn btn-lg btn-info">
+          Download resources <i class="fa fa-cloud-download fa-lg"></i>
         </button>
       </div>
       
@@ -55,7 +55,7 @@
       <div class="modal-body">
         <%= form_for Visitor.new, remote:true, :authenticity_token => true, :html => {:role => "form", :class => "form-horizontal", :id => "visitor_form" } do |f| %>
 
-          <p class="lead">Please enter your email address.</p>
+          <p class="lead">Thank you for using our service. In order to serve you better in the future please leave your email address.</p>
           <br>
           <div class="form-group">
             <%= f.label :email, "Email", class: "control-label sr-only" %>
