@@ -31,31 +31,22 @@
   <div class="container">
   	<section>
   	  <h3>List of avaliable resources</h3>
-
-      <%= render "resource_list_plain" %>
-      
+      <%= render "resource_list_plain" %>      
       <div class="text-center" id="control_buttons">
-        <button data-toggle="modal" data-target="#visitor_info" class="text-center btn btn-lg btn-info">
-          Download resources <i class="fa fa-cloud-download fa-lg"></i>
-        </button>
+        <button data-toggle="modal" data-target="#visitor_info" class="btn btn-primary" type="button"><i class="fa fa-cloud-download fa-lg"></i><span>Download</span></button>
       </div>
-      
-     
   </div>
 </div>
-
 <!-- END PAGE CONTENT -->
-
 
 <!-- MODAL -->
 <div class="modal fade" id="visitor_info" tabindex="-1" role="dialog" aria-labelledby="visitor_info_label">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      
       <div class="modal-body">
         <%= form_for Visitor.new, remote:true, :authenticity_token => true, :html => {:role => "form", :class => "form-horizontal", :id => "visitor_form" } do |f| %>
 
-          <p class="lead">Thank you for using our service. In order to serve you better in the future please leave your email address.</p>
+          <p class="lead">Please enter your email address...</p>
           <br>
           <div class="form-group">
             <%= f.label :email, "Email", class: "control-label sr-only" %>

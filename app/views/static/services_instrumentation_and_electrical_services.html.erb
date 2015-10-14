@@ -26,36 +26,13 @@
     <div class="row">
       <!-- BOXED CONTENT -->
       <div class="col-md-3">
-        <ul id="sidebar-nav" class="sidebar-nav margin-bottom-30px">
-          <li class="list-group-item ">
-            <%= link_to "Control Systems Integrator", services_control_systems_integrator_path %>
-          </li>
-          <li class="list-group-item ">
-            <%= link_to "PLC / HMI Programming", services_plc_hmi_path %>
-          </li>
-          <li class="list-group-item ">
-            <%= link_to "Controls Systems Technical Support", services_controls_systems_technical_support_path %>
-          </li>
-          <li class="list-group-item ">
-            <%= link_to "Network Design and Support", services_network_design_and_support_path %>
-          </li>
-          <li class="list-group-item ">
-            <%= link_to "Control Panel Fabrication", services_control_panel_fabrication_path %>
-          </li>      
-          <li class="list-group-item ">
-            <%= link_to "Instrumentation and Electrical Services", services_instrumentation_and_electrical_services_path %>
-          </li>
-          <li class="list-group-item ">
-            <%= link_to "Data Acquisition and Hosting Solutions", services_data_acquisition_and_hosting_solutions_path %>
-          </li>
-          <li class="list-group-item ">
-            <%= link_to "Control Systems Audits", services_control_systems_audits_path %>
-          </li>
-        </ul>
+        <%= render "layouts/service_table" %>
       </div>
       <!-- END BOXED CONTENT -->
 
       <div class="col-md-9">
+        <%= image_tag "testimonial-bg.png", alt: "more intro image", class: "img-responsive" %>
+      </br>
         <p>Instrumentation, electrical, and controls services is the heart of our business. From preliminary services through detailed design and project execution, our project development process encompasses the entire scope of service deliverables, including: </p>
 
         <ul>

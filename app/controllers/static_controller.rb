@@ -70,6 +70,10 @@ class StaticController < ApplicationController
     render layout: "general"
   end
 
+  def services_commissioning
+    render layout: "general"
+  end
+
   # methods for static project gallery pages
   def projects_sample
     render layout: "general"

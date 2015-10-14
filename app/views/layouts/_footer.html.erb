@@ -4,7 +4,6 @@
       <div class="col-md-4">
         <!-- COLUMN 1 -->
         <h3 class="sr-only"> ABOUT US </h3>
-        <%= image_tag "connect_logo.png", alt: "Company LOGO light", class: "logo" %>
         <p> Connect Control System Inc. </p>
         <p> Connect Global Corp. </p>
         <br>
@@ -28,26 +27,23 @@
                 <%= link_to "About Us", about_path %>
               </li>
               <li>
-                <a href="http://localhost:3000/#latest-news">News</a>
-              </li>
-              <li>
                 <%= link_to "Careers", careers_path %>
               </li>
               <li>
-                <%= link_to "Blog", under_construction_page_path %>
+                <%= link_to "Blog", blog_path %>
               </li>
             </ul>
           </div>
           <div class="col-xs-6">
             <ul class="list-unstyled footer-nav">
               <li>
-                <%= link_to "FAQ", under_construction_page_path %>
-              </li>
+                <%= link_to "Services", services_path %>
+              </li>              
               <li>
-                <%= link_to "Terms", under_construction_page_path %>
-              </li>
+                <%= link_to "Experiences", experience_path %>
+              </li>   
               <li>
-                <%= link_to "Privacy Policy", under_construction_page_path %>
+                <%= link_to "Resources", resources_path %>
               </li>
               <li>
                 <%= link_to "Contact Us", contacts_path %>
@@ -79,7 +75,7 @@
               <a href="https://www.linkedin.com/company/connect-control-systems-ltd" class="linkedin-bg"><i class="fa fa-linkedin"></i></a>
             </li>
             <li>
-              <a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.facebook.com/ConnectControlInc?fref=ts" class="facebook-bg"><i class="fa fa-facebook"></i></a>
             </li>
             <li>
               <a href="https://twitter.com/ConnectCtrl" class="twitter-bg"><i class="fa fa-twitter"></i></a>
